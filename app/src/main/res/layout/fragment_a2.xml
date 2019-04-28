@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragments.FragmentA"
+              android:orientation="vertical">
+
+    <Button
+
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="a2"
+
+    />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A-2 fragment"/>
+
+</LinearLayout>

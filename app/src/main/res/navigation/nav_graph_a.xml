@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph_a" app:startDestination="@id/a1Fragment">
+
+    <fragment android:id="@+id/a1Fragment" android:name="com.example.rndviewpappernested.fragments.A1Fragment"
+              android:label="A1Fragment">
+        <action android:id="@+id/action_a1Fragment_to_a2Fragment" app:destination="@id/a2Fragment"/>
+    </fragment>
+    <fragment android:id="@+id/a2Fragment" android:name="com.example.rndviewpappernested.fragments.A2Fragment"
+              android:label="A2Fragment">
+        <action android:id="@+id/action_a2Fragment_to_a3Fragment" app:destination="@id/a3Fragment"/>
+        <action android:id="@+id/action_a2Fragment_to_a1Fragment" app:destination="@id/a1Fragment"/>
+    </fragment>
+    <fragment android:id="@+id/a3Fragment" android:name="com.example.rndviewpappernested.fragments.A3Fragment"
+              android:label="A3Fragment">
+        <action android:id="@+id/action_a3Fragment_to_a2Fragment" app:destination="@id/a2Fragment"/>
+        <action android:id="@+id/action_a3Fragment_to_a1Fragment" app:destination="@id/a1Fragment"/>
+    </fragment>
+</navigation>
